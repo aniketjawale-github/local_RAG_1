@@ -38,9 +38,8 @@ No cloud. No paid APIs. No data leaves the system.
 
 
 ---
-
-## 🛠️ Tools & Technologies Used
-
+# 🛠️ Tools & Technologies Used
+```
 | Tool | Why It Is Used | What It Does |
 |----|----|----|
 | **Python** | Core language | Backend logic |
@@ -54,11 +53,10 @@ No cloud. No paid APIs. No data leaves the system.
 | **FastAPI** | Backend API | Controls RAG workflow |
 | **SQLite** | Local DB | Users, roles, logs |
 | **Streamlit** | UI | Chat interface |
-
+```
 ---
-
 ## 📂 Project Structure
-
+```
 local_rag/
 ├── backend/
 │ ├── main.py # FastAPI app
@@ -75,7 +73,7 @@ local_rag/
 │ └── ops/
 ├── requirements.txt
 └── README.md
-
+```
 
 ---
 
