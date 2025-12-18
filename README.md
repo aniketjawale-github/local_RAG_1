@@ -20,7 +20,7 @@ No cloud. No paid APIs. No data leaves the system.
 ---
 
 ## 🧩 High-Level Architecture
-
+```
 -User
 ↓
 -Streamlit UI
@@ -34,7 +34,7 @@ No cloud. No paid APIs. No data leaves the system.
 -Ollama (local LLM)
 ↓
 -Answer
-
+```
 
 
 ---
@@ -225,6 +225,6 @@ streamlit run ui/app.py
 
 -Cloud migration (Azure / AWS)
 
-###📌 Key Takeaway
+📌 Key Takeaway
 
 -This project demonstrates a real, production-style RAG architecture built fully locally, showing how documents, vectors, access control, and LLMs work together end-to-end.
