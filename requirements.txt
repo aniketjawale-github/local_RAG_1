@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+sentence-transformers
+qdrant-client
+pypdf
+requests
+streamlit
+python-dotenv
