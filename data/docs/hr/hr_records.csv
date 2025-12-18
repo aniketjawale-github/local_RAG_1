@@ -1,0 +1,6 @@
+Employee_ID,Employee_Name,Department,Designation,Date_of_Joining,Employment_Type,Annual_Salary_LPA,Leave_Balance_Days,Performance_Rating
+EMP001,Anita Sharma,HR,HR Manager,2019-06-10,Permanent,9.5,18,A
+EMP002,Rohit Verma,Finance,Accountant,2020-08-15,Permanent,7.2,15,B
+EMP003,Priya Nair,Operations,Operations Executive,2021-01-20,Contract,5.4,12,A
+EMP004,Suresh Patil,IT,Software Engineer,2022-07-05,Permanent,10.8,20,A
+EMP005,Neha Gupta,Sales,Sales Executive,2023-03-18,Permanent,6.5,14,B
