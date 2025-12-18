@@ -184,22 +184,17 @@ Question: What is the leave policy?
 ---
 docker run -d -p 6333:6333 qdrant/qdrant
 2. Start Ollama
-bash
-Copy code
-ollama run llama3.1:8b
+-ollama run llama3.1:8b
 3. Ingest Documents
-bash
-Copy code
-python backend/ingest.py
+-python backend/ingest.py
 4. Run Backend API
-bash
-Copy code
 uvicorn backend.main:app --reload
 5. Run Streamlit UI
-bash
-Copy code
 streamlit run ui/app.py
-🎯 Key Learnings from This Project
+---
+
+### 🎯 Key Learnings from This Project
+
 How RAG works internally
 
 How embeddings and vectors behave
@@ -212,7 +207,8 @@ How to run LLMs locally
 
 How real production-style RAG systems are designed
 
-🔮 Possible Next Enhancements
+### 🔮 Possible Next Enhancements
+
 JWT-based authentication
 
 Token-based chunking with overlap
@@ -225,5 +221,6 @@ Docker-compose (one-command start)
 
 Cloud migration (Azure / AWS)
 
-📌 Key Takeaway
+###📌 Key Takeaway
+
 This project demonstrates a real, production-style RAG architecture built fully locally, showing how documents, vectors, access control, and LLMs work together end-to-end.
