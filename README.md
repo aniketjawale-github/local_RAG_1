@@ -21,19 +21,19 @@ No cloud. No paid APIs. No data leaves the system.
 
 ## 🧩 High-Level Architecture
 
-User
+-User
 ↓
-Streamlit UI
+-Streamlit UI
 ↓
-FastAPI Backend
+-FastAPI Backend
 ↓
-SQLite (user → role)
+-SQLite (user → role)
 ↓
-Qdrant (vector search + FGAC)
+-Qdrant (vector search + FGAC)
 ↓
-Ollama (local LLM)
+-Ollama (local LLM)
 ↓
-Answer
+-Answer
 
 
 
@@ -178,49 +178,53 @@ Question: What is the leave policy?
 
 ---
 
-## ▶️ How to Run the Project (Local)
+## 🚀 How to Run the Application
 
-### 1. Start Qdrant
----
+```bash
+# 1️⃣ Start Qdrant (Vector Database)
 docker run -d -p 6333:6333 qdrant/qdrant
-2. Start Ollama
--ollama run llama3.1:8b
-3. Ingest Documents
--python backend/ingest.py
-4. Run Backend API
+
+# 2️⃣ Start Ollama (Local LLM)
+ollama run llama3.1:8b
+
+# 3️⃣ Ingest Documents
+python backend/ingest.py
+
+# 4️⃣ Run Backend API (FastAPI)
 uvicorn backend.main:app --reload
-5. Run Streamlit UI
+
+# 5️⃣ Run Streamlit UI
 streamlit run ui/app.py
----
+```
 
 ### 🎯 Key Learnings from This Project
 
-How RAG works internally
+-How RAG works internally
 
-How embeddings and vectors behave
+-How embeddings and vectors behave
 
-How vector databases perform semantic search
+-How vector databases perform semantic search
 
-How fine-grained access control is enforced
+-How fine-grained access control is enforced
 
-How to run LLMs locally
+-How to run LLMs locally
 
-How real production-style RAG systems are designed
+-How real production-style RAG systems are designed
 
 ### 🔮 Possible Next Enhancements
 
-JWT-based authentication
+-JWT-based authentication
 
-Token-based chunking with overlap
+-Token-based chunking with overlap
 
-Feedback loop (👍 / 👎)
+-Feedback loop (👍 / 👎)
 
-DEV / UAT / PROD separation
+-DEV / UAT / PROD separation
 
-Docker-compose (one-command start)
+-Docker-compose (one-command start)
 
-Cloud migration (Azure / AWS)
+-Cloud migration (Azure / AWS)
 
 ###📌 Key Takeaway
 
-This project demonstrates a real, production-style RAG architecture built fully locally, showing how documents, vectors, access control, and LLMs work together end-to-end.
+-This project demonstrates a real, production-style RAG architecture built fully locally, showing how documents, vectors, access control, and LLMs work together end-to-end.
